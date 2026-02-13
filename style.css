@@ -20,8 +20,7 @@ body{
   text-align:center;
   overflow:hidden;
 
-   transform: scale(1.1);        
-  transform-origin: center top; 
+
 }
 
 .container{
@@ -122,5 +121,5 @@ p{
 }
 
 @keyframes bloom{
-  to{transform:scale(1)}
+  to{transform:scale(1.1)}
 }
