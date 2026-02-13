@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&display=swap');
+
+:root{
+  --pink:#f7a8c4;
+  --soft:#fde2eb;
+  --cream:#fff6f0;
+  --text:#5a2a3a;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Playfair Display', serif;
+  background:linear-gradient(var(--soft),var(--cream));
+  color:var(--text);
+  text-align:center;
+  overflow:hidden;
+}
+
+.container{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:40px;
+}
+
+h1{
+  font-family:'Pacifico', cursive;
+  color:var(--pink);
+  font-size:3rem;
+}
+
+h2{
+  font-family:'Pacifico', cursive;
+  color:var(--pink);
+  font-size:2rem;
+}
+
+p{
+  max-width:700px;
+  line-height:1.9;
+  font-size:1.1rem;
+  margin-top:20px;
+}
+
+.btn{
+  margin-top:40px;
+  padding:12px 26px;
+  background:var(--pink);
+  color:white;
+  border:none;
+  border-radius:30px;
+  font-size:1rem;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+  background:#ff8fb3;
+}
+
+.heart{
+  position:fixed;
+  bottom:-20px;
+  color:pink;
+  font-size:20px;
+  animation:floatUp 6s linear infinite;
+  opacity:.7;
+}
+
+.final-page{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:24px;
+}
+
+@keyframes floatUp{
+  from{transform:translateY(0) scale(1)}
+  to{transform:translateY(-110vh) scale(1.5);opacity:0}
+}
+
+.flower{
+  position:relative;
+  width:240px;
+  height:240px;
+  margin-top:20px;
+}
+
+.flower span{
+  position:absolute;
+  width:120px;
+  height:120px;
+  background:#ff7aa2;
+  border-radius:50%;
+  transform:scale(0);
+  animation:bloom 1.5s forwards;
+}
+
+.flower span:nth-child(1){ top:0; left:60px }
+.flower span:nth-child(2){ top:60px; left:0 }
+.flower span:nth-child(3){ top:60px; right:0 }
+.flower span:nth-child(4){ bottom:0; left:60px }
+
+.flower span:nth-child(5){
+  top:60px;
+  left:60px;
+  background:#ffd1dc;
+  animation-delay:.6s;
+}
+
+@keyframes bloom{
+  to{transform:scale(1)}
+}
