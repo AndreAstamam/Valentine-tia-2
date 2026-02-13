@@ -9,7 +9,7 @@ setInterval(()=>{
 
 window.addEventListener("click", () => {
   const music = document.getElementById("bgm");
-  if (music.paused) {
+  if (music && music.paused) {
     music.play();
   }
 }, { once: true });
