@@ -19,6 +19,9 @@ body{
   color:var(--text);
   text-align:center;
   overflow:hidden;
+
+   transform: scale(1.1);        
+  transform-origin: center top; 
 }
 
 .container{
