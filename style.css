@@ -105,7 +105,7 @@ p{
   background:#ff7aa2;
   border-radius:50%;
   transform:scale(0);
-  animation:bloom 1.5s forwards;
+  animation:bloom 3s forwards;
 }
 
 .flower span:nth-child(1){ top:0; left:60px }
